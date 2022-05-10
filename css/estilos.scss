@@ -13,7 +13,7 @@ $colorterciario: black;
 $fontXS: 1.2em;
 $fontS: 1.5em;
 $fontM: 2em;
-$fontL: 2.5em;
+$fontL: 3em;
 
 $largos: (
     "corto" : 30%,
@@ -103,6 +103,23 @@ body{
                     height: 100vh;
                     }
                 }
+            }
+        }
+
+        .titulo-Index{
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            
+            h1{
+                font-size: $fontL;
+                color: $colorprimario;
+            }
+
+            h2{
+                font-size: $fontM;
+                color: $colorprimario
             }
         }
 
