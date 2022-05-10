@@ -15,18 +15,37 @@ $fontS: 1.5em;
 $fontM: 2em;
 $fontL: 2.5em;
 
+$largos: (
+    "corto" : 30%,
+    "mediano" : 60%,
+    "full" : 100%,
+);
+
 @mixin sizes($largo, $alto){
     width: $largo;
     height: $alto;
 }
 
+@mixin estilonavs{
+    display: flex;
+    flex-direction: row;
+    width: map-get($largos , "corto" );
+    justify-content: end;
+    align-items: center;
+    margin:  0px 50px 50px auto;
+    list-style: none;
+}
+
+
+// codigo scss
+
 body{
-    background-color: black;
+    background-color: $colorterciario;
     main{
         .NavBar{
             display: flex;
             flex-direction: row;
-            width: 100%;
+            width: map-get($largos , "full" );
             background-color: transparent;
             justify-content: space-between;
             align-items: center;
@@ -40,17 +59,16 @@ body{
             }
 
             .Links-NavBar{
-                display: flex;
-                width: 50%;
-                justify-content: space-between;
-                list-style: none;
-                margin: 0px 50px;
-                
+                    @include estilonavs;
+                    margin:20px;
 
                 li{
-                    border: white solid 1px;
+                    border: $colorprimario solid 1px;
+                    width: map-get($largos , "mediano" );
+                    margin: 0px 10px;
+                    
                     &:hover{
-                        background-color: white;
+                        background-color: $colorprimario;
                         }
 
                     a{
@@ -58,7 +76,7 @@ body{
                         padding: 50px;
                         text-decoration: none;
                         &:hover{
-                            color: black;
+                            color: $colorterciario;
                         }
                     }
 
@@ -68,7 +86,7 @@ body{
 
         .carousel{
             position: absolute;
-            width: 100%;
+            width: map-get($largos , "full" );
             top: 0%;
             
             
@@ -90,28 +108,15 @@ body{
 
         footer{
             .Nav-Footer{
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                background-color: transparent;
-                justify-content: space-between;
-                align-items: center;
-                z-index: 1000;
-                position: fixed;
+                @extend .NavBar;
                 bottom: 0%;
                 
 
                 .Links-Footer{
-                    display: flex;
-                    flex-direction: row;
-                    width: 30%;
-                    justify-content: end;
-                    align-items: center;
-                    margin:  0px 50px 50px auto;
-                    list-style: none;
+                    @include estilonavs;
                     
                     li{
-                        width: 60%;
+                        width: map-get($largos , "mediano" );
                         margin: 0px 10px;
                         
 
@@ -198,7 +203,7 @@ body{
                     background-position: center;
                     background-size: cover;
                     text-decoration: none;
-                    color: whitesmoke;
+                    color: $colorprimario;
                     font-size: $fontM;
                     transition: 0.7s;
                     text-shadow: 2px 2px 2px $colorterciario ;
@@ -232,7 +237,7 @@ body{
                     font-size: 50px;
                     transform: scale(1.2);
                     z-index: 100;
-                    box-shadow: 2px 2px 2px #00000090 ;
+                    box-shadow: 2px 2px 2px $colorterciario ;
                     }
                 }
 

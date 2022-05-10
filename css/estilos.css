@@ -10,7 +10,7 @@ body {
   background-color: black;
 }
 
-body main .NavBar {
+body main .NavBar, body main footer .Nav-Footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,38 +30,48 @@ body main .NavBar {
   position: fixed;
 }
 
-body main .NavBar .Nav-Bar-Logo img {
+body main .NavBar .Nav-Bar-Logo img, body main footer .Nav-Footer .Nav-Bar-Logo img {
   -webkit-animation: rotationy 7s infinite linear;
           animation: rotationy 7s infinite linear;
 }
 
-body main .NavBar .Links-NavBar {
+body main .NavBar .Links-NavBar, body main footer .Nav-Footer .Links-NavBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 50px 50px auto;
   list-style: none;
-  margin: 0px 50px;
+  margin: 20px;
 }
 
-body main .NavBar .Links-NavBar li {
+body main .NavBar .Links-NavBar li, body main footer .Nav-Footer .Links-NavBar li {
   border: white solid 1px;
+  width: 60%;
+  margin: 0px 10px;
 }
 
-body main .NavBar .Links-NavBar li:hover {
+body main .NavBar .Links-NavBar li:hover, body main footer .Nav-Footer .Links-NavBar li:hover {
   background-color: white;
 }
 
-body main .NavBar .Links-NavBar li a {
+body main .NavBar .Links-NavBar li a, body main footer .Nav-Footer .Links-NavBar li a {
   color: white;
   padding: 50px;
   text-decoration: none;
 }
 
-body main .NavBar .Links-NavBar li a:hover {
+body main .NavBar .Links-NavBar li a:hover, body main footer .Nav-Footer .Links-NavBar li a:hover {
   color: black;
 }
 
@@ -91,23 +101,6 @@ body main .carousel .carousel-inner .carousel-item img {
 }
 
 body main footer .Nav-Footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  background-color: transparent;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1000;
-  position: fixed;
   bottom: 0%;
 }
 
@@ -250,7 +243,7 @@ body main .bloque-galeria .IndexMain a {
   background-position: center;
   background-size: cover;
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
   font-size: 2em;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -292,8 +285,8 @@ body main .bloque-fotos-galeria span:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 100;
-  -webkit-box-shadow: 2px 2px 2px #00000090;
-          box-shadow: 2px 2px 2px #00000090;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
 }
 
 body main .bloque-fotos-galeria .img1 {
