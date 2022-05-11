@@ -568,6 +568,11 @@ body main .bloque-about .text-foto .bloque-texto-about {
   color: white;
 }
 
+body main .bloque-about .text-foto .bloque-texto-about h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
 @-webkit-keyframes rotationy {
   from {
     -webkit-transform: rotatey(0deg);
