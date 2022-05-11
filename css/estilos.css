@@ -253,11 +253,9 @@ body main .bloque-galeria .IndexMain a {
   font-size: 2em;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  border-top: 40px solid white;
-  border-bottom: 20px solid white;
   opacity: 0.8;
-  -webkit-box-shadow: 1px 1px 1px white;
-          box-shadow: 1px 1px 1px white;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
 }
 
 body main .bloque-galeria .IndexMain a:hover {
@@ -276,8 +274,6 @@ body main .bloque-fotos-galeria {
       grid-template-columns: repeat(6, minmax(200px, 1fr));
   -ms-grid-rows: (minmax(1fr, 200px))[4];
       grid-template-rows: repeat(4, minmax(1fr, 200px));
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
   grid-gap: 10px 10px;
   overflow: hidden;
 }
