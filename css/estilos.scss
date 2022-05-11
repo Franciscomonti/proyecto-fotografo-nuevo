@@ -15,12 +15,14 @@ $fontS: 1.5em;
 $fontM: 2em;
 $fontL: 3em;
 
+// mapa
 $largos: (
     "corto" : 30%,
     "mediano" : 60%,
     "full" : 100%,
 );
 
+// Mixins
 @mixin sizes($largo, $alto){
     width: $largo;
     height: $alto;
@@ -51,10 +53,19 @@ body{
             align-items: center;
             z-index: 1000;
             position: fixed;
+            height: 100px;
 
             .Nav-Bar-Logo{
                 img{
+                    margin: 10px 30px;
                     animation: rotationy 7s infinite linear;
+                }
+            }
+
+            .Nav-Bar-Back{
+                img{
+                    width: 50px;
+                    margin: 10px 50px;
                 }
             }
 
@@ -167,10 +178,10 @@ body{
 
             .IndexMain{
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                @include sizes(60%, 60vh);
-                grid-gap: 30px 20px;
+                grid-template-columns: repeat(4, 25%);
+                grid-template-rows: repeat(1, 100%);
+                @include sizes(70%, 60vh);
+                grid-gap: 30px 40px;
                 margin: 10% auto;
                 
             
@@ -182,20 +193,20 @@ body{
                 }
             
                 .LinkCasamiento{
-                    grid-column: 1/3;
-                    grid-row: 2/4;
+                    grid-column: 2/3;
+                    grid-row: 1/2;
                     background-image: url(../img/10.jpg);
                 }
             
                 .LinkBooks{
-                    grid-column: 2/3;
+                    grid-column: 3/4;
                     grid-row: 1/2;
                     background-image: url(../img/4.jpg);
                 }
                 
                 .LinkSweet{
-                    grid-column: 3/4;
-                    grid-row: 3/4;
+                    grid-column: 4/5;
+                    grid-row: 1/2;
                     background-image: url(../img/7.jpg);
                 }
                 
@@ -223,8 +234,10 @@ body{
                     color: $colorprimario;
                     font-size: $fontM;
                     transition: 0.7s;
-                    text-shadow: 2px 2px 2px $colorterciario ;
+                    border-top: 40px solid $colorprimario;
+                    border-bottom: 20px solid $colorprimario;
                     opacity:0.8;
+                    box-shadow: 1px 1px 1px $colorprimario ;
             
                     &:hover{
                         transform: scale(1.2);
