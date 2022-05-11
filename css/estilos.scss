@@ -170,10 +170,14 @@ body{
                             align-items: center;
                             width: auto;
                                 &:hover {
+                                    background-color: $colorterciario;
+                                    border-radius: 15px;
                                     img{
                                     animation: vibracion 0.5s linear infinite;
                                     }
                                 }
+
+                            }
                             
                             img{
                                 width: 60px;
@@ -450,10 +454,9 @@ body{
 
                 }
             }
-            }
         }
-
     }
+
 
 // Animaciones
 

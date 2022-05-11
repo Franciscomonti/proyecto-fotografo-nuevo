@@ -166,23 +166,28 @@ body main footer .Nav-Footer .Links-Footer li a {
   width: auto;
 }
 
+body main footer .Nav-Footer .Links-Footer li a:hover {
+  background-color: black;
+  border-radius: 15px;
+}
+
 body main footer .Nav-Footer .Links-Footer li a:hover img {
   -webkit-animation: vibracion 0.5s linear infinite;
           animation: vibracion 0.5s linear infinite;
 }
 
-body main footer .Nav-Footer .Links-Footer li a img {
+body main footer .Nav-Footer .Links-Footer li img {
   width: 60px;
   padding: 0px 10px;
 }
 
-body main .bloque-galeria {
+body .bloque-galeria {
   width: 100%;
   height: 100vh;
   position: absolute;
 }
 
-body main .bloque-galeria .IndexMain {
+body .bloque-galeria .IndexMain {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
@@ -195,7 +200,7 @@ body main .bloque-galeria .IndexMain {
   margin: 10% auto;
 }
 
-body main .bloque-galeria .IndexMain .LinkGallery {
+body .bloque-galeria .IndexMain .LinkGallery {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -205,7 +210,7 @@ body main .bloque-galeria .IndexMain .LinkGallery {
   background-image: url(../img/2.jpg);
 }
 
-body main .bloque-galeria .IndexMain .LinkCasamiento {
+body .bloque-galeria .IndexMain .LinkCasamiento {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -215,7 +220,7 @@ body main .bloque-galeria .IndexMain .LinkCasamiento {
   background-image: url(../img/10.jpg);
 }
 
-body main .bloque-galeria .IndexMain .LinkBooks {
+body .bloque-galeria .IndexMain .LinkBooks {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -225,7 +230,7 @@ body main .bloque-galeria .IndexMain .LinkBooks {
   background-image: url(../img/4.jpg);
 }
 
-body main .bloque-galeria .IndexMain .LinkSweet {
+body .bloque-galeria .IndexMain .LinkSweet {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
@@ -235,7 +240,7 @@ body main .bloque-galeria .IndexMain .LinkSweet {
   background-image: url(../img/7.jpg);
 }
 
-body main .bloque-galeria .IndexMain a {
+body .bloque-galeria .IndexMain a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,14 +263,14 @@ body main .bloque-galeria .IndexMain a {
           box-shadow: 1px 1px 1px black;
 }
 
-body main .bloque-galeria .IndexMain a:hover {
+body .bloque-galeria .IndexMain a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 1.0;
   z-index: 10000;
 }
 
-body main .bloque-fotos-galeria {
+body .bloque-fotos-galeria {
   width: 100%;
   height: 100vh;
   display: -ms-grid;
@@ -278,14 +283,14 @@ body main .bloque-fotos-galeria {
   overflow: hidden;
 }
 
-body main .bloque-fotos-galeria span {
+body .bloque-fotos-galeria span {
   background-position: center;
   background-size: cover;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
-body main .bloque-fotos-galeria span:hover {
+body .bloque-fotos-galeria span:hover {
   font-size: 50px;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -294,7 +299,7 @@ body main .bloque-fotos-galeria span:hover {
           box-shadow: 2px 2px 2px black;
 }
 
-body main .bloque-fotos-galeria .img1 {
+body .bloque-fotos-galeria .img1 {
   background-image: url(../img/1.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -304,7 +309,7 @@ body main .bloque-fotos-galeria .img1 {
   grid-row: 1/2;
 }
 
-body main .bloque-fotos-galeria .img2 {
+body .bloque-fotos-galeria .img2 {
   background-image: url(../img/2.jpg);
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -314,7 +319,7 @@ body main .bloque-fotos-galeria .img2 {
   grid-row: 1/2;
 }
 
-body main .bloque-fotos-galeria .img3 {
+body .bloque-fotos-galeria .img3 {
   background-image: url(../img/3.jpg);
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -324,7 +329,7 @@ body main .bloque-fotos-galeria .img3 {
   grid-row: 1/2;
 }
 
-body main .bloque-fotos-galeria .img4 {
+body .bloque-fotos-galeria .img4 {
   background-image: url(../img/4.jpg);
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -334,7 +339,7 @@ body main .bloque-fotos-galeria .img4 {
   grid-row: 1/2;
 }
 
-body main .bloque-fotos-galeria .img5 {
+body .bloque-fotos-galeria .img5 {
   background-image: url(../img/5.jpg);
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -344,7 +349,7 @@ body main .bloque-fotos-galeria .img5 {
   grid-row: 1/2;
 }
 
-body main .bloque-fotos-galeria .img6 {
+body .bloque-fotos-galeria .img6 {
   background-image: url(../img/6.jpg);
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
@@ -354,7 +359,7 @@ body main .bloque-fotos-galeria .img6 {
   grid-row: 1/2;
 }
 
-body main .bloque-fotos-galeria .img7 {
+body .bloque-fotos-galeria .img7 {
   background-image: url(../img/7.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -364,7 +369,7 @@ body main .bloque-fotos-galeria .img7 {
   grid-row: 2/3;
 }
 
-body main .bloque-fotos-galeria .img8 {
+body .bloque-fotos-galeria .img8 {
   background-image: url(../img/8.jpg);
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -374,7 +379,7 @@ body main .bloque-fotos-galeria .img8 {
   grid-row: 2/3;
 }
 
-body main .bloque-fotos-galeria .img9 {
+body .bloque-fotos-galeria .img9 {
   background-image: url(../img/9.jpg);
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -384,7 +389,7 @@ body main .bloque-fotos-galeria .img9 {
   grid-row: 2/3;
 }
 
-body main .bloque-fotos-galeria .img10 {
+body .bloque-fotos-galeria .img10 {
   background-image: url(../img/10.jpg);
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -394,7 +399,7 @@ body main .bloque-fotos-galeria .img10 {
   grid-row: 2/3;
 }
 
-body main .bloque-fotos-galeria .img11 {
+body .bloque-fotos-galeria .img11 {
   background-image: url(../img/11.jpg);
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -404,7 +409,7 @@ body main .bloque-fotos-galeria .img11 {
   grid-row: 2/3;
 }
 
-body main .bloque-fotos-galeria .img12 {
+body .bloque-fotos-galeria .img12 {
   background-image: url(../img/12.jpg);
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
@@ -414,7 +419,7 @@ body main .bloque-fotos-galeria .img12 {
   grid-row: 2/3;
 }
 
-body main .bloque-fotos-galeria .img13 {
+body .bloque-fotos-galeria .img13 {
   background-image: url(../img/13.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -424,7 +429,7 @@ body main .bloque-fotos-galeria .img13 {
   grid-row: 3/4;
 }
 
-body main .bloque-fotos-galeria .img14 {
+body .bloque-fotos-galeria .img14 {
   background-image: url(../img/14.jpg);
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -434,7 +439,7 @@ body main .bloque-fotos-galeria .img14 {
   grid-row: 3/4;
 }
 
-body main .bloque-fotos-galeria .img15 {
+body .bloque-fotos-galeria .img15 {
   background-image: url(../img/15.jpg);
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -444,7 +449,7 @@ body main .bloque-fotos-galeria .img15 {
   grid-row: 3/4;
 }
 
-body main .bloque-fotos-galeria .img16 {
+body .bloque-fotos-galeria .img16 {
   background-image: url(../img/16.jpg);
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -454,7 +459,7 @@ body main .bloque-fotos-galeria .img16 {
   grid-row: 3/4;
 }
 
-body main .bloque-fotos-galeria .img17 {
+body .bloque-fotos-galeria .img17 {
   background-image: url(../img/17.jpg);
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -464,7 +469,7 @@ body main .bloque-fotos-galeria .img17 {
   grid-row: 3/4;
 }
 
-body main .bloque-fotos-galeria .img18 {
+body .bloque-fotos-galeria .img18 {
   background-image: url(../img/18.jpg);
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
@@ -474,7 +479,7 @@ body main .bloque-fotos-galeria .img18 {
   grid-row: 3/4;
 }
 
-body main .bloque-fotos-galeria .img19 {
+body .bloque-fotos-galeria .img19 {
   background-image: url(../img/19.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -484,7 +489,7 @@ body main .bloque-fotos-galeria .img19 {
   grid-row: 4/5;
 }
 
-body main .bloque-fotos-galeria .img20 {
+body .bloque-fotos-galeria .img20 {
   background-image: url(../img/20.jpg);
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -494,7 +499,7 @@ body main .bloque-fotos-galeria .img20 {
   grid-row: 4/5;
 }
 
-body main .bloque-fotos-galeria .img21 {
+body .bloque-fotos-galeria .img21 {
   background-image: url(../img/21.jpg);
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -504,7 +509,7 @@ body main .bloque-fotos-galeria .img21 {
   grid-row: 4/5;
 }
 
-body main .bloque-fotos-galeria .img22 {
+body .bloque-fotos-galeria .img22 {
   background-image: url(../img/22.jpg);
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -514,7 +519,7 @@ body main .bloque-fotos-galeria .img22 {
   grid-row: 4/5;
 }
 
-body main .bloque-fotos-galeria .img23 {
+body .bloque-fotos-galeria .img23 {
   background-image: url(../img/23.jpg);
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -524,7 +529,7 @@ body main .bloque-fotos-galeria .img23 {
   grid-row: 4/5;
 }
 
-body main .bloque-fotos-galeria .img24 {
+body .bloque-fotos-galeria .img24 {
   background-image: url(../img/24.jpg);
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
@@ -534,7 +539,7 @@ body main .bloque-fotos-galeria .img24 {
   grid-row: 4/5;
 }
 
-body main .bloque-about {
+body .bloque-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,25 +551,25 @@ body main .bloque-about {
           align-items: center;
 }
 
-body main .bloque-about .text-foto {
+body .bloque-about .text-foto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body main .bloque-about .text-foto img {
+body .bloque-about .text-foto img {
   width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-body main .bloque-about .text-foto .bloque-texto-about {
+body .bloque-about .text-foto .bloque-texto-about {
   width: 50%;
   margin-left: 40px;
   color: white;
 }
 
-body main .bloque-about .text-foto .bloque-texto-about h1 {
+body .bloque-about .text-foto .bloque-texto-about h1 {
   font-size: 3em;
   margin-bottom: 40px;
 }
