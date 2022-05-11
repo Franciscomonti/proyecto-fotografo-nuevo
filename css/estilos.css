@@ -29,6 +29,7 @@ body main .NavBar, body main footer .Nav-Footer {
   z-index: 1000;
   position: fixed;
   height: 100px;
+  top: 0;
 }
 
 body main .NavBar .Nav-Bar-Logo img, body main footer .Nav-Footer .Nav-Bar-Logo img {
@@ -126,6 +127,7 @@ body main .titulo-Index h2 {
 
 body main footer .Nav-Footer {
   bottom: 0%;
+  top: auto;
 }
 
 body main footer .Nav-Footer .Links-Footer {
@@ -534,6 +536,36 @@ body main .bloque-fotos-galeria .img24 {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+}
+
+body main .bloque-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .bloque-about .text-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .bloque-about .text-foto img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .bloque-about .text-foto .bloque-texto-about {
+  width: 50%;
+  margin-left: 40px;
+  color: white;
 }
 
 @-webkit-keyframes rotationy {

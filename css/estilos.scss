@@ -54,6 +54,7 @@ body{
             z-index: 1000;
             position: fixed;
             height: 100px;
+            top: 0;
 
             .Nav-Bar-Logo{
                 img{
@@ -138,6 +139,7 @@ body{
             .Nav-Footer{
                 @extend .NavBar;
                 bottom: 0%;
+                top: auto;
                 
 
                 .Links-Footer{
@@ -402,10 +404,37 @@ body{
                 grid-column: 6/7;
                 grid-row: 4/5;
             }
-
         }
-}
-}
+
+// Pagina About
+
+        .bloque-about{
+            display: flex;
+            @include sizes(80%, 100vh);
+            margin: auto;
+            align-items: center;
+
+            .text-foto{
+                display: flex;
+
+                img{
+                width: 50%;
+                object-fit: cover;
+                }
+                
+                .bloque-texto-about{
+                width: 50%;
+                margin-left: 40px;
+                color: $colorprimario;
+
+                }
+            }
+            }
+        }
+
+    }
+
+
 
 @keyframes rotationy {
     from {
